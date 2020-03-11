@@ -17,6 +17,8 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/addon-viewport": "^5.3.14",
     "@storybook/vue": "^5.3.14",
     "babel-eslint": "^10.0.1",
     "babel-preset-vue": "^2.0.2",
