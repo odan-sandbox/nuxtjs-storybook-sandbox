@@ -15,10 +15,13 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@storybook/addon-docs": "^5.3.14",
     "@storybook/addon-viewport": "^5.3.14",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/preset-typescript": "^2.1.0",
     "@storybook/vue": "^5.3.14",
     "babel-eslint": "^10.0.1",
     "babel-preset-vue": "^2.0.2",
