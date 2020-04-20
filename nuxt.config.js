@@ -50,7 +50,23 @@ const config = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    babel: {
+      // storybook が core-js@3 を使っているので、NuxtJS も core-js@3 を使う
+      // https://github.com/nuxt/nuxt.js/releases/tag/v2.6.0
+      // この p-r がリリースされたら不要になる https://github.com/nuxt/nuxt.js/pull/6721
+      presets({ isServer }) {
+        return [
+          [
+            require.resolve('@nuxt/babel-preset-app'),
+            {
+              buildTarget: isServer ? 'server' : 'client',
+              corejs: { version: 3 }
+            }
+          ]
+        ]
+      }
+    }
   }
 }
 export default config

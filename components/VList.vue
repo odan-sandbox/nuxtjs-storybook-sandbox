@@ -2,7 +2,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   render(createElement) {
-    const li = this.$slots.default.map((vnode) => {
+    const li = (this.$slots.default || []).map((vnode) => {
       return createElement('li', { class: 'item' }, [vnode])
     })
 
